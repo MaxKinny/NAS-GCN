@@ -18,7 +18,7 @@ if __name__ == '__main__':
             y_train.append(0)
     y_train = np.array(y_train)
     clf = ImageClassifier(verbose=True, augment=False)
-    clf.fit(x_train, y_train, time_limit=30 * 60)
+    clf.fit(x_train, y_train, time_limit=30 * 6000)
     clf.final_fit(x_train, y_train, x_test, y_test, retrain=True)
     y = clf.evaluate(x_test, y_test)
     plt.imshow(x_train[0, :, :, 0], cmap=plt.cm.bone)
