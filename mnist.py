@@ -1,5 +1,5 @@
 from keras.datasets import mnist
-from autokeras_NAS import ImageClassifier
+from autokeras import ImageClassifier
 from matplotlib import pyplot as plt
 
 if __name__ == '__main__':
