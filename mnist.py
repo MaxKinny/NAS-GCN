@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # anaconda3/envs/auto-keras/lib/python3.6/site-packages/autokeras/net_module.py
     # cos code: "from autokeras import ImageClassifier"
     # when you execute it, it will call autokeras from anaconda env's site-packages
-    # however the grammar checker will track it from the local package!!!
+    # however the grammar checker and the hyper-linker will track it from the local package!!!
     # they are different!!!!!
     clf = ImageClassifier(verbose=True, augment=False)
     clf.fit(x_train, y_train, time_limit=30 * 6000)
